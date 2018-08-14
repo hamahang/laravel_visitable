@@ -1,4 +1,4 @@
-# laravel_comments_system
-laravel likes system is a laravel package .
+# laravel_visitable_system
+laravel visit system is a laravel package .
 
 # Requiments 
