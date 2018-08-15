@@ -19,9 +19,9 @@
         },
         computed: {
             visits:function () {
-                if(this.item.visits.length>0)
+                if(this.item.visits)
                 {
-                    return this.item.visits.length
+                    return this.item.visits
                 }
                 else
                 {
