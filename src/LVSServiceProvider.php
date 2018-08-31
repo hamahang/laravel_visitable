@@ -17,15 +17,6 @@ class LVSServiceProvider extends ServiceProvider
     	// the main router
         $this->loadRoutesFrom( __DIR__.'/Routes/backend_lvs_route.php');
         $this->loadRoutesFrom( __DIR__.'/Routes/frontend_lvs_route.php');
-	    // the main views folder
-	    $this->loadViewsFrom(__DIR__ . '/Views', 'laravel_visitable');
-	    // the main migration folder for create sms_ir tables
-
-	    // for publish the views into main app
-	    $this->publishes([
-		    __DIR__ . '/Views' => resource_path('views/vendor/laravel_visitable'),
-	    ]);
-
 	    $this->publishes([
 		    __DIR__ . '/Database/Migrations/' => database_path('migrations')
 	    ], 'migrations');

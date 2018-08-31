@@ -1,6 +1,6 @@
 <template>
    <span class="show_visitable">
-       <i class="far fa-eye color_blue"></i><span class="ml-1">{{visits}}</span>
+       <i class="far fa-eye color_blue"></i><span class="m_r_3">{{visits}}</span>
    </span>
 </template>
 
@@ -46,4 +46,11 @@
     border-right: 1px solid #d9d9d966 ;
     padding-right: 4px;
 }
+.m_r_3{
+    margin-right: 3%;
+}
+.ltr .m_r_3{
+    margin-left: 3%;
+}
+
 </style>
