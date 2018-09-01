@@ -1,6 +1,6 @@
 <template>
     <span class="show_visitable-rtl">
-       <i class="lvs-icon fa-lvs-eye1 color_blue"></i>
+       <div class="lvs-icon fa-lvs-eye1 color_blue lgs_float_left margin_right_4"></div>
        <span class="ml-1">{{visits}}</span>
    </span>
 </template>
@@ -43,7 +43,8 @@
 </script>
 
 <style scoped>
-.show_visitable{
+    @import  '../../../../../public/vendor/laravel_visitable/fonts/icon/style.css';
+    .show_visitable{
     border-right: 1px solid #d9d9d966 ;
     padding-right: 4px;
 }
