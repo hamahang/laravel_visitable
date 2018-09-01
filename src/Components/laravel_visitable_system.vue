@@ -1,11 +1,12 @@
 <template>
-   <span class="show_visitable">
-       <i class="far fa-eye color_blue"></i><span class="m_r_3">{{visits}}</span>
+    <span class="show_visitable-rtl">
+       <i class="lvs-icon fa-lvs-eye1 color_blue"></i>
+       <span class="ml-1">{{visits}}</span>
    </span>
 </template>
 
 <script>
-    import axios from '../../../../../public/vendor/laravel_gallery_system/packages/axios/index.js'
+    import axios from './lib/axios/index.js'
     export default {
         name: "laravel_visitable_system",
         props:['model','item'],
