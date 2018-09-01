@@ -43,7 +43,7 @@
 </script>
 
 <style scoped>
-    @import  '../../../../../public/vendor/laravel_visitable/fonts/icon/style.css';
+    @import  './lib/icon/style.css';
     .show_visitable{
     border-right: 1px solid #d9d9d966 ;
     padding-right: 4px;
