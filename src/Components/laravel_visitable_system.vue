@@ -1,6 +1,6 @@
 <template>
     <span class="show_visitable-rtl">
-       <div class="lvs-icon fa-lvs-eye1 color_blue lgs_float_left margin_right_4"></div>
+       <div class="lvs-icon fa-lvs-eye1 color_blue lgs_float_left margin_right_4" style="margin-top: 3px"></div>
        <span class="ml-1">{{visits}}</span>
    </span>
 </template>
@@ -20,9 +20,9 @@
         },
         computed: {
             visits:function () {
-                if(this.item.visits)
+                if(this.item.visits_count)
                 {
-                    return this.item.visits
+                    return this.item.visits_count
                 }
                 else
                 {
