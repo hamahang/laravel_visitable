@@ -36,6 +36,12 @@ class LVSServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/Components' => resource_path('assets/js/components/laravel_visitable'),
         ]);
+
+        $this->loadViewsFrom(__DIR__ . '/Views', 'laravel_visitable');
+
+        $this->publishes([
+            __DIR__ . '/Views' => resource_path('views/vendor/laravel_visitable'),
+        ]);
     }
 
     /**

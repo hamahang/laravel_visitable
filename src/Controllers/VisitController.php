@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use ArtinCMS\LVS\Models\Visit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Yajra\DataTables\Facades\DataTables;
 
 
 class VisitController extends Controller
@@ -32,4 +33,23 @@ class VisitController extends Controller
        ];
        return $result;
    }
+    public function manageLvs(Request $request)
+    {
+        return view('laravel_visitable::backend.index');
+    }
+
+    public function getVisitsGrid(Request $request)
+    {
+        $like = Visit::with('user');
+
+        return Datatables::eloquent($like)
+            ->editColumn('id', function ($data) {
+                return LVS_getEncodeId($data->id);
+            })
+            ->editColumn('created_at', function ($data) {
+                return LVS_Date_GtoJ($data->created_at);
+            })
+            ->make(true);
+    }
+
 }
