@@ -8,8 +8,6 @@ return [
     // you can change default route from sms-admin to anything you want
     'backend_lvs_route_prefix' => 'LVS',
     'frontend_lvs_route_prefix' => 'LVS',
-    // SMS.ir Api Key
-    'api-key' => env('SMSIR-API-KEY','Your api key'),
     // ======================================================================
     //allow user to upload private file in filemanager
     'autoPublish'=>true,
