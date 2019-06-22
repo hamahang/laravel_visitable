@@ -17,7 +17,7 @@ class Visit extends Model
     }
     public function user()
     {
-        return $this->belongsTo(config('laravel_visitable.userModel'), 'user_id');
+        return $this->belongsTo(config('laravel_visitable.user_model'), 'user_id');
     }
 
     public function getTargetTypeNameAttribute()

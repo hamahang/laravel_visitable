@@ -3,19 +3,9 @@
 return [
 
     /* Important Settings */
-    'backend_lvs_middlewares' => ['web'],
-    'frontend_lvs_middlewares' => ['web'],
+    'backend_lvs_middlewares' =>  env('BACKEND_LVS_MIDDLEWARES', 'web'),
+    'frontend_lvs_middlewares' => env('FRONTEND_LVS_MIDDLEWARES', 'web'),
     // you can change default route from sms-admin to anything you want
-    'backend_lvs_route_prefix' => 'LVS',
-    'frontend_lvs_route_prefix' => 'LVS',
-    // ======================================================================
-    //allow user to upload private file in filemanager
-    'autoPublish'=>true,
-    'guestCanComments'=>true,
-    'loginUrl'=>'http://127.0.0.1:8000/login',
-    'registerUrl'=>'http://127.0.0.1:8000/register',
-    'userModel'=>'App\User',
-
-
-
+    'backend_lvs_route_prefix' =>  env('BACKEND_LVS_ROUTE_PERFIX', 'LVS'),
+    'frontend_lvs_route_prefix' =>  env('FRONTEND_LVS_ROUTE_PERFIX', 'LVS'),
 ];
