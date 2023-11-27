@@ -1,6 +1,6 @@
 <?php
 
-namespace ArtinCMS\LVS;
+namespace Hamahang\LVS;
 
 use Illuminate\Support\ServiceProvider;
 

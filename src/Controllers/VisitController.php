@@ -1,9 +1,9 @@
 <?php
 
-namespace ArtinCMS\LVS\Controllers;
+namespace Hamahang\LVS\Controllers;
 
 use App\Http\Controllers\Controller;
-use ArtinCMS\LVS\Models\Visit;
+use Hamahang\LVS\Models\Visit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\Facades\DataTables;

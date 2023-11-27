@@ -7,7 +7,7 @@ function LVS_Date_GtoJ($GDate = null, $Format = "Y/m/d-H:i", $convert = true)
     {
         return '--/--/----';
     }
-    $date = new ArtinCMS\LVS\Helpers\Classes\jDateTime($convert, true, 'Asia/Tehran');
+    $date = new Hamahang\LVS\Helpers\Classes\jDateTime($convert, true, 'Asia/Tehran');
     $time = is_numeric($GDate) ? strtotime(date('Y-m-d H:i:s', $GDate)) : strtotime($GDate);
 
     return $date->date($Format, $time);
@@ -16,8 +16,8 @@ function LVS_Date_GtoJ($GDate = null, $Format = "Y/m/d-H:i", $convert = true)
 function LVS_Date_JtoG($jDate, $delimiter = '/', $to_string = false, $with_time = false, $input_format = 'Y/m/d H:i:s')
 {
     $jDate = ConvertNumbersFatoEn($jDate);
-    $parseDateTime = ArtinCMS\LVS\Helpers\Classes\jDateTime::parseFromFormat($input_format, $jDate);
-    $r = ArtinCMS\LVS\Helpers\Classes\jDateTime::toGregorian($parseDateTime['year'], $parseDateTime['month'], $parseDateTime['day']);
+    $parseDateTime = Hamahang\LVS\Helpers\Classes\jDateTime::parseFromFormat($input_format, $jDate);
+    $r = Hamahang\LVS\Helpers\Classes\jDateTime::toGregorian($parseDateTime['year'], $parseDateTime['month'], $parseDateTime['day']);
     if ($to_string)
     {
         if ($with_time)

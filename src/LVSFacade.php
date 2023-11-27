@@ -1,5 +1,5 @@
 <?php
-namespace ArtinCMS\LVS;
+namespace Hamahang\LVS;
 use Illuminate\Support\Facades\Facade;
 
 class LVSFacade extends Facade

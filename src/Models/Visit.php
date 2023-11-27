@@ -1,8 +1,8 @@
 <?php
 
-namespace ArtinCMS\LVS\Models;
+namespace Hamahang\LVS\Models;
 
-use ArtinCMS\LMM\Models\Morph;
+use Hamahang\LMM\Models\Morph;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 class Visit extends Model
@@ -13,7 +13,7 @@ class Visit extends Model
 
     public function morphs()
     {
-        return $this->hasMany('ArtinCMS\LMM\Models\Morph');
+        return $this->hasMany('Hamahang\LMM\Models\Morph');
     }
     public function user()
     {
