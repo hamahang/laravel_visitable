@@ -28,7 +28,7 @@
     },
     "require": {
         "yajra/laravel-datatables-oracle": ">=9.0",
-		"hamahang/laravel_morphable_manager": "dev-master"
+		"hamahang/laravel_morphable_manager": "1.0.0.*"
 
     },
     "extra": {
